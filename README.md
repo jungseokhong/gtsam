@@ -128,3 +128,13 @@ GTSAM is open source under the BSD license, see the [`LICENSE`](LICENSE) and [`L
 Please see the [`examples/`](examples) directory and the [`USAGE`](USAGE.md) file for examples on how to use GTSAM.
 
 GTSAM was developed in the lab of [Frank Dellaert](http://www.cc.gatech.edu/~dellaert) at the [Georgia Institute of Technology](http://www.gatech.edu), with the help of many contributors over the years, see [THANKS](THANKS.md).
+
+
+## install Python binding
+cd your-gtsam-directory/build
+
+cmake .. -DGTSAM_BUILD_PYTHON=1 -DGTSAM_PYTHON_VERSION=<your python version such as 3.x.x>
+
+sudo make install -j4
+
+make python-install

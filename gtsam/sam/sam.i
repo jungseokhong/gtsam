@@ -88,6 +88,8 @@ typedef gtsam::BearingFactor<gtsam::Pose3, gtsam::Point3, gtsam::Unit3>
     BearingFactor3D;
 typedef gtsam::BearingFactor<gtsam::Pose2, gtsam::Pose2, gtsam::Rot2>
     BearingFactorPose2;
+typedef gtsam::BearingFactor<gtsam::Pose3, gtsam::Pose3, gtsam::Unit3>
+    BearingFactorPose3;
 
 #include <gtsam/sam/BearingRangeFactor.h>
 template <POSE, POINT, BEARING, RANGE>
